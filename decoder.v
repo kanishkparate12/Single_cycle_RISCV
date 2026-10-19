@@ -61,7 +61,7 @@ module decoder(
                 imm = {{11{instr[31]}}, instr[31], instr[19:12],
                        instr[20], instr[30:21], 1'b0};
             end
-
+/*
             default: begin
                 rd     = 5'b0;
                 rs1    = 5'b0;
@@ -69,6 +69,7 @@ module decoder(
                 funct3 = 3'b0;
                 funct7 = 7'b0;
                 imm    = 32'b0;
+                */
             end
         endcase
     end
